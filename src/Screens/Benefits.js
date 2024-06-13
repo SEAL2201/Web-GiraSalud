@@ -11,7 +11,10 @@ const Benefits = () => {
   return (
     <div name="Benefits" className={styles.benefits}>
       <h2 className={styles.benefitTitle}>
-        Benefits of having a professional web
+      En GIRASALUD, empoderamos a los padres de hijos con
+dificultades emocionales y de conducta con el objetivo de
+mejorar su salud mental y calidad de vida.
+
       </h2>
       <p>
         You open up to the world <BsFillDoorOpenFill />

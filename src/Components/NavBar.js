@@ -30,15 +30,15 @@ const NavBar = () => {
   const links = [
     {
       id: 1,
-      link: "Home",
+      link: "Inicio",
     },
     {
       id: 2,
-      link: "Services",
+      link: "Servicios",
     },
     {
       id: 3,
-      link: "HowWeWork",
+      link: "Nosotros",
     },
     {
       id: 4,
@@ -58,7 +58,9 @@ const NavBar = () => {
           : styles.navBar
       }
     >
-      {!navBarOpen && <p className={styles.logo}>DISO | Digital Solutions</p>}
+      <div className={styles.logoContainer}>
+        <p className={styles.logo}>Gira | SALUD</p>
+      </div>
       {!navBarOpen && windowDimension.width < 800 ? (
         <AiOutlineMenu
           color="#f1f1f1"
@@ -77,16 +79,15 @@ const NavBar = () => {
       {navBarOpen && (
         <ul className={styles.linksContainer}>
           {links.map(({ id, link }) => (
-            <div>
+            <div key={id}>
               <Link
-                key={id}
                 onClick={() => setNavBarOpen(false)}
                 to={link}
                 smooth
                 duration={500}
                 className={styles.navLink}
               >
-                {link === "HowWeWork" ? "How we work" : link}
+                {link === "Inicio" ? "Inicio" : link}
               </Link>
               <div className={styles.border}></div>
             </div>
@@ -94,31 +95,35 @@ const NavBar = () => {
         </ul>
       )}
       {windowDimension.width > 800 && (
-        <ul className={styles.linksContainer}>
-          {links.map(({ link, id }) => (
-            <div>
-              <Link
-                onClick={() => setNavBarOpen(false)}
-                to={link}
-                smooth
-                duration={500}
-                className={styles.navLink}
-              >
-                {link === "HowWeWork" ? "How we work" : link}
-              </Link>
-              <div className={styles.border}></div>
-            </div>
-          ))}
-          <Link
-            onClick={() => setNavBarOpen(false)}
-            to="Contact"
-            smooth
-            duration={500}
-            className={styles.contactLink}
-          >
-            Contact
-          </Link>
-        </ul>
+        <>
+          <ul className={styles.linksContainer}>
+            {links.map(({ link, id }) => (
+              <div key={id}>
+                <Link
+                  onClick={() => setNavBarOpen(false)}
+                  to={link}
+                  smooth
+                  duration={500}
+                  className={styles.navLink}
+                >
+                  {link === "Nosotros" ? "Nosotros" : link}
+                </Link>
+                <div className={styles.border}></div>
+              </div>
+            ))}
+          </ul>
+          <div className={styles.contactLinkContainer}>
+            <Link
+              onClick={() => setNavBarOpen(false)}
+              to="Contact"
+              smooth
+              duration={500}
+              className={styles.contactLink}
+            >
+              Contactanos
+            </Link>
+          </div>
+        </>
       )}
     </div>
   );

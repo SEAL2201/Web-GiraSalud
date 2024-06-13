@@ -1,6 +1,6 @@
 import Home from "./Screens/Home";
 import Services from "./Screens/Services";
-import HowWeWork from "./Screens/HowWeWork";
+import Us from "./Screens/Us";
 import Benefits from "./Screens/Benefits";
 import Contact from "./Screens/Contact";
 import NavBar from "./Components/NavBar";
@@ -11,7 +11,7 @@ function App() {
       <NavBar />
       <Home />
       <Services />
-      <HowWeWork />
+      <Us />
       <Benefits />
       <Contact />
     </div>
