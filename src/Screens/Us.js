@@ -22,8 +22,8 @@ const Nosotros = () => {
       <div className="bg-cover bg-center bg-no-repeat h-screen" style={{ backgroundImage: `url(${background1})` }}>
         <div className="bg-black bg-opacity-50 h-full flex items-center justify-center">
           <div className="text-center text-white px-4">
-            <h1 className="text-5xl font-extrabold">GiraSalud</h1>
-            <p className="mt-4 text-2xl">
+            <h1 className="text-7xl font-extrabold">GiraSalud</h1>
+            <p className="mt-4 text-4xl">
               "Todos los aprendizajes más importantes de la vida se hacen jugando"
               (Francesco Tonucci)
             </p>
@@ -32,14 +32,14 @@ const Nosotros = () => {
       </div>
       <div className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-gray-900 text-center">GiraSalud Psicología</h2>
+          <h2 className="text-4xl font-extrabold text-gray-900 text-center">GiraSalud Psicología</h2>
           <div className="mt-4 flex flex-col sm:flex-row items-center">
-            <div className="sm:w-1/2 text-lg text-gray-600">
+            <div className="sm:w-1/2 text-3xl text-gray-600">
               <ul>
                 <li>Somos GIRASALUD, un equipo de psicólogos que promociona la salud mental por medio de actividades artísticas con material lúdico y terapias psicológicas.</li>
-                <li>En GIRASALUD, empoderamos a los padres de hijos con dificultades emocionales y de conducta con el objetivo de mejorar su salud mental y calidad de vida.</li>
-                <li>Contribuimos en la prevención y promoción de la salud mental por medio de actividades artísticas con material lúdico; y tratamos el malestar emocional a través de la terapia psicológica.</li>
-                <li>Ser reconocidos como un espacio de salud mental artístico en la ciudad de Latacunga.</li>
+                <li>- En GIRASALUD, empoderamos a los padres de hijos con dificultades emocionales y de conducta con el objetivo de mejorar su salud mental y calidad de vida.</li>
+                <li>- Contribuimos en la prevención y promoción de la salud mental por medio de actividades artísticas con material lúdico; y tratamos el malestar emocional a través de la terapia psicológica.</li>
+                <li>- Ser reconocidos como un espacio de salud mental artístico en la ciudad de Latacunga.</li>
               </ul>
             </div>
             <div className="sm:w-1/2 mt-6 sm:mt-0 flex justify-center">
@@ -50,7 +50,7 @@ const Nosotros = () => {
               />
             </div>
           </div>
-          <h2 className="text-3xl font-extrabold text-gray-900 text-center">Equipo de GiraSalud Psicología</h2>
+          <h2 className="text-4xl font-extrabold text-gray-900 text-center">Equipo de GiraSalud Psicología</h2>
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
             {professionals.map((professional, index) => (
               <div key={index} className="professional-container bg-white shadow-md rounded-lg p-6 text-center">
@@ -61,8 +61,8 @@ const Nosotros = () => {
                     alt={professional.name} 
                   />
                 </div>
-                <h3 className="mt-6 text-xl font-bold text-gray-900">{professional.name}</h3>
-                <p className="mt-4 text-gray-600">{professional.description}</p>
+                <h3 className="mt-6 text-4xl font-bold text-gray-900">{professional.name}</h3>
+                <p className="mt-4 text-3xl text-gray-600">{professional.description}</p>
               </div>
             ))}
           </div>

@@ -1,9 +1,11 @@
+import React from "react";
 import Home from "./Screens/Home";
 import Services from "./Screens/Services";
 import Us from "./Screens/Us";
-import Benefits from "./Screens/Benefits";
+import Resources from "./Screens/Resources";
 import Contact from "./Screens/Contact";
 import NavBar from "./Components/NavBar";
+import WhatsAppButton from "./Screens/WhatsAppButton"; // Importa el componente
 
 function App() {
   return (
@@ -12,8 +14,9 @@ function App() {
       <Home />
       <Services />
       <Us />
-      <Benefits />
+      <Resources />
       <Contact />
+      <WhatsAppButton /> {/* Añade el botón de WhatsApp */}
     </div>
   );
 }

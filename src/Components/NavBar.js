@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import { AiOutlineMenu, AiOutlineClose, AiFillFacebook, AiFillInstagram } from "react-icons/ai";
+import { FaTiktok } from "react-icons/fa"; // Font Awesome
 import styles from "./NavBar.module.css";
-import { AiOutlineMenu } from "react-icons/ai";
-import { AiOutlineClose } from "react-icons/ai";
 import { useScrollPosition } from "../Hooks/scrollPosition";
+import logo from "../assets/logo_web_optimized.png"; 
 
 const NavBar = () => {
   const [navBarOpen, setNavBarOpen] = useState(false);
@@ -28,22 +29,10 @@ const NavBar = () => {
   }, [windowDimension]);
 
   const links = [
-    {
-      id: 1,
-      link: "Inicio",
-    },
-    {
-      id: 2,
-      link: "Servicios",
-    },
-    {
-      id: 3,
-      link: "Nosotros",
-    },
-    {
-      id: 4,
-      link: "Benefits",
-    },
+    { id: 1, link: "Inicio" },
+    { id: 2, link: "Servicios" },
+    { id: 3, link: "Nosotros" },
+    { id: 4, link: "Semillero" },
   ];
 
   const scrollPosition = useScrollPosition();
@@ -59,7 +48,7 @@ const NavBar = () => {
       }
     >
       <div className={styles.logoContainer}>
-        <p className={styles.logo}>Gira | SALUD</p>
+        <img src={logo} alt="Logo" className={styles.logo} />
       </div>
       {!navBarOpen && windowDimension.width < 800 ? (
         <AiOutlineMenu
@@ -112,6 +101,17 @@ const NavBar = () => {
               </div>
             ))}
           </ul>
+          <div className={styles.socialIconsContainer}>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+              <AiFillFacebook size={25} />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+              <AiFillInstagram size={25} />
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+              <FaTiktok size={25} />
+            </a>
+          </div>
           <div className={styles.contactLinkContainer}>
             <Link
               onClick={() => setNavBarOpen(false)}

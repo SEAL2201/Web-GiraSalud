@@ -19,6 +19,7 @@
 }
 
 .navLink {
+  font-size: 60px; /* Tamaño de fuente grande para los enlaces */
   display: flex;
   font-size: 2em;
   font-weight: 400;
@@ -49,6 +50,7 @@
 .logo {
   color: #f1f1f1;
   font-weight: 600;
+  height: 50px; /* Ajusta el tamaño de la imagen del logo según sea necesario */
 }
 
 @media (min-width: 800px) {
@@ -67,12 +69,12 @@
   .navLink {
     font-weight: 400;
     padding-top: 4px;
-    font-size: 1.4em;
+    font-size: 2.4em; /* Ajusta el tamaño de la fuente para pantallas grandes */
     margin: 0 15px;
     transition: 0.5s;
   }
   .navLink:hover {
-    font-size: 1.5em;
+    font-size: 3.5em; /* Ajusta el tamaño de la fuente al hacer hover */
   }
   .navOnScroll {
     align-content: center;
@@ -99,11 +101,30 @@
 }
 
 .contactLink {
-  color: #f1f1f1;
+  color: #c71094;
   display: flex;
-  font-size: 1.5em;
+  font-size: 1.5em; /* Ajusta el tamaño de la fuente para el enlace de contacto */
   font-weight: 400;
-  background-color: #90d4db;
+  background-color: #f1ece6;
   border-radius: 4px;
   padding: 3px;
+}
+
+.socialIconsContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre los iconos */
+}
+
+.socialIcon {
+  color: #f1f1f1; /* Color de los iconos */
+  transition: color 0.3s;
+}
+
+.socialIcon:hover {
+  color: #90d4db; /* Color cuando se pasa el mouse por encima */
+}
+
+.contactLinkContainer {
+  margin-left: 20px; /* Espacio entre el último icono y el botón de Contactanos */
 }

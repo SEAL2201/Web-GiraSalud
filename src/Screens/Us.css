@@ -13,15 +13,14 @@
   text-align: center;
 }
 .professional-container {
-  background-color: #90d4db; /* Color de fondo específico */
-  border-radius: 10px; /* Bordes redondeados */
+  background-color: #f1ece6; /* Color de fondo específico */
+  border-radius: 20px; /* Bordes redondeados */
   padding: 20px; /* Espaciado interno */
   margin-bottom: 20px; /* Margen inferior */
 }
 @font-face {
   font-family: 'Demo Regular';
   src: url('../assets/fonts/Daily Challenge DEMO.otf') format('truetype');
-  /* Asegúrate de tener la ruta correcta y el formato del archivo de la fuente */
 }
 
 body {

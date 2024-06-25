@@ -1,6 +1,4 @@
 import React from "react";
-// import { Link } from "react-scroll";
-// import background from './assets/background.jpeg';
 import background from '../assets/background.jpeg';
 
 const Home = () => {
@@ -10,11 +8,11 @@ const Home = () => {
       className="h-screen bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${background})` }}
     >
-      <div className="flex flex-col justify-center items-center h-full bg-black bg-opacity-50">
+      <div className="flex flex-col justify-center items-left h-full bg-black bg-opacity-50">
         <div className="text-left text-white">
-          <h1 className="text-5xl font-bold animate-pulse">GIRASALUD TU CENTRO DE PSICOLÓGIA</h1>
+          <h1 className="text-8xl font-bold animate-pulse">GIRASALUD</h1>
           <div class="flex justify-center"></div>
-          <h1 className="text-5xl font-bold animate-pulse">BIENVENIDO!</h1>
+          <h1 className="text-7xl font-bold animate-pulse">EL PODER DE ELEGIR</h1>
         </div>
         {/* <div className="mt-8">
           <Link
