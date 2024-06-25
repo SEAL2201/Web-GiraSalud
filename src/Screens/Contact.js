@@ -1,5 +1,5 @@
 import React from "react";
-import contactImage from "../assets/AMBAR.jpg";
+import contactImage from "../assets/AMBAR.png";
 
 const Contact = () => {
   return (
@@ -58,7 +58,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-indigo-600 text-white text-2xl md:text-4xl py-2 px-4 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors"
+                className="w-full bg-customColor text-customTextColor text-2xl md:text-4xl py-2 px-4 border border-transparent rounded-md shadow-sm hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-customColor transition-colors"
               >
                 Enviar
               </button>

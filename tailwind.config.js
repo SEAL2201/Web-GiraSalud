@@ -11,9 +11,25 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customColor: '#ffd490b5',
+        customTextColor: '#f7941d',
+            },
+          },
   },
   plugins: [],
 }
+// module.exports = {
+//   theme: {
+//     extend: {
+//       colors: {
+//         customColor: '#ffd490b5',
+//       },
+//     },
+//   },
+//   variants: {},
+//   plugins: [],
+// }
 
 

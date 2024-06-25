@@ -7,12 +7,12 @@ const professionals = [
   {
     name: "Dr. ALEXANDER AZUERO GALARZA",
     description: "Psicólogo especialista en la gestión del talento humano, con más de 3 años de experiencia, ha formado a 1000 colaboradores en: liderazgo, trabajo en equipo, gestión de emociones, seguridad en el trabajo y riesgos psicosociales. Destaca en dinámicas de equipos, capacitaciones lúdicas, gincanas y team building; imparte talleres para empresas e instituciones.",
-    image: require("../assets/ALEX.jpg"),
+    image: require("../assets/ALEX.png"),
   },
   {
     name: "Dra. AMBAR VIVAS VILLAMARÍN",
     description: "Psicóloga Clínica con 3 años de experiencia trabajando con terapia cognitivo conductual en casos de ansiedad, depresión, trastornos alimenticios, síndrome post COVID, adicciones, trastornos de conducta en niños y violencia intrafamiliar; ha ayudado a más de 300 personas. Además destaca en dinámicas creativas, intervenciones grupales, primeros auxilios psicológicos y terapia cognitiva conductual.s",
-    image: require("../assets/AMBAR.jpg"),
+    image: require("../assets/AMBAR.png"),
   },
 ];
 
@@ -53,8 +53,8 @@ const Nosotros = () => {
           <h2 className="text-4xl font-extrabold text-gray-900 text-center">Equipo de GiraSalud Psicología</h2>
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
             {professionals.map((professional, index) => (
-              <div key={index} className="professional-container bg-white shadow-md rounded-lg p-6 text-center">
-                <div className="w-60 h-60 mx-auto rounded-full overflow-hidden">
+              <div key={index} className="professional-container bg-white shadow-md p-6 text-center">
+                <div className="w-60 h-60 mx-auto overflow-hidden">
                   <img 
                     className="w-full h-full object-cover object-top" 
                     src={professional.image} 
