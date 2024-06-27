@@ -2,6 +2,7 @@ import React from "react";
 import background1 from '../assets/background1.jpg';
 import paragraphImage from '../assets/paragraphImage.jpg'; // Asegúrate de tener esta imagen en tu carpeta de assets
 import './Us.css'; // Archivo de estilos CSS para Nosotros
+import styles from '../App.module.css';
 
 const professionals = [
   {
@@ -32,9 +33,9 @@ const Nosotros = () => {
       </div>
       <div className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-extrabold text-gray-900 text-center">GiraSalud Psicología</h2>
+          <h2 className={`text-4xl font-extrabold text-gray-900 text-center ${styles['fontFamily-MyFont2']}`}>GiraSalud Psicología</h2>
           <div className="mt-4 flex flex-col sm:flex-row items-center">
-            <div className="sm:w-1/2 text-3xl text-gray-600">
+            <div className="sm:w-1/2 text-4xl text-gray-600">
               <ul>
                 <li>Somos GIRASALUD, un equipo de psicólogos que promociona la salud mental por medio de actividades artísticas con material lúdico y terapias psicológicas.</li>
                 <li>- En GIRASALUD, empoderamos a los padres de hijos con dificultades emocionales y de conducta con el objetivo de mejorar su salud mental y calidad de vida.</li>
@@ -50,7 +51,7 @@ const Nosotros = () => {
               />
             </div>
           </div>
-          <h2 className="text-4xl font-extrabold text-gray-900 text-center">Equipo de GiraSalud Psicología</h2>
+          <h2 className={`text-4xl font-extrabold text-gray-900 text-center ${styles['fontFamily-MyFont2']}`}>Equipo de GiraSalud Psicología</h2>
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
             {professionals.map((professional, index) => (
               <div key={index} className="professional-container bg-white shadow-md p-6 text-center">

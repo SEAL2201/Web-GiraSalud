@@ -101,13 +101,24 @@
 }
 
 .contactLink {
-  color: #c71094;
-  display: flex;
-  font-size: 1.5em; /* Ajusta el tamaño de la fuente para el enlace de contacto */
-  font-weight: 400;
-  background-color: #f1ece6;
-  border-radius: 4px;
-  padding: 3px;
+  background-color: transparent;
+  border: 2px solid #565B80;
+  color: #565B80;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  display: inline-block;
+}
+
+.contactLink:hover {
+  background-color: #565B80;
+  color: #333;
+  cursor: pointer;
+}
+
+.socialIconsContainer a {
+  margin-right: 10px;
 }
 
 .socialIconsContainer {

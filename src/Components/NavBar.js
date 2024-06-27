@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { AiOutlineMenu, AiOutlineClose, AiFillFacebook, AiFillInstagram } from "react-icons/ai";
-import { FaTiktok } from "react-icons/fa"; // Font Awesome
+import { FaTiktok } from "react-icons/fa";
 import styles from "./NavBar.module.css";
 import { useScrollPosition } from "../Hooks/scrollPosition";
-import logo from "../assets/logo1.jpeg"; 
+import logo from "../assets/logo1.jpeg";
+import Button from './Button';
 
 const NavBar = () => {
   const [navBarOpen, setNavBarOpen] = useState(false);
@@ -113,7 +114,7 @@ const NavBar = () => {
             </a>
           </div>
           <div className={styles.contactLinkContainer}>
-            <Link
+            <Button
               onClick={() => setNavBarOpen(false)}
               to="Contact"
               smooth
@@ -121,7 +122,7 @@ const NavBar = () => {
               className={styles.contactLink}
             >
               Contactanos
-            </Link>
+            </Button>
           </div>
         </>
       )}
