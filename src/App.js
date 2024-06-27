@@ -5,7 +5,8 @@ import Us from "./Screens/Us";
 import Resources from "./Screens/Resources";
 import Contact from "./Screens/Contact";
 import NavBar from "./Components/NavBar";
-import WhatsAppButton from "./Screens/WhatsAppButton"; // Importa el componente
+import WhatsAppButton from "./Screens/WhatsAppButton"; 
+import './App.module.css';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Us />
       <Resources />
       <Contact />
-      <WhatsAppButton /> {/* Añade el botón de WhatsApp */}
+      <WhatsAppButton /> 
     </div>
   );
 }

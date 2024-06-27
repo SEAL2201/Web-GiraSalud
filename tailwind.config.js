@@ -12,6 +12,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        custom: ['MyFont1', 'losta-masta-medium'], 
+        custom1: ['MyFont2', 'moon-bold'],
+        custom2: ['MyFont3', 'Daily Challenge DEMO'],
+      },
       colors: {
         customColor: '#ffd490b5',
         customTextColor: '#f7941d',

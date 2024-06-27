@@ -4,7 +4,7 @@ import { AiOutlineMenu, AiOutlineClose, AiFillFacebook, AiFillInstagram } from "
 import { FaTiktok } from "react-icons/fa"; // Font Awesome
 import styles from "./NavBar.module.css";
 import { useScrollPosition } from "../Hooks/scrollPosition";
-import logo from "../assets/logo_web_optimized.png"; 
+import logo from "../assets/logo1.jpeg"; 
 
 const NavBar = () => {
   const [navBarOpen, setNavBarOpen] = useState(false);
@@ -102,13 +102,13 @@ const NavBar = () => {
             ))}
           </ul>
           <div className={styles.socialIconsContainer}>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+            <a href="https://www.facebook.com/profile.php?id=100066695102480" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
               <AiFillFacebook size={25} />
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+            <a href="https://www.instagram.com/girasalud_ec/?hl=es" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
               <AiFillInstagram size={25} />
             </a>
-            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+            <a href="https://www.tiktok.com/@girasaludec" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
               <FaTiktok size={25} />
             </a>
           </div>

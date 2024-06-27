@@ -1,47 +1,31 @@
 import React, { useState } from "react";
-import { BsFillDoorOpenFill } from "react-icons/bs";
-import { FaPeopleCarry, FaMoneyBillAlt } from "react-icons/fa";
-// import { AiOutlineSchedule, AiOutlineRise } from "react-icons/ai";
-import { AiOutlineSchedule} from "react-icons/ai";
-// import { FiRepeat } from "react-icons/fi";
+import { GiToolbox, GiCrafting, GiBookshelf, GiMusicalNotes } from "react-icons/gi";
 
 const resources = [
   {
     id: 1,
     title: "Kits de Habilidades para la Vida",
-    icon: <BsFillDoorOpenFill />,
+    icon: <GiToolbox />,
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 2,
     title: "Manualidades Emocionales",
-    icon: <FaPeopleCarry />,
+    icon: <GiCrafting />,
     content: "Praesent varius urna id elit tincidunt interdum.",
   },
   {
     id: 3,
     title: "Cuentos Infantiles",
-    icon: <FaMoneyBillAlt />,
+    icon: <GiBookshelf />,
     content: "Nullam in mi nec lorem tempor eleifend ut nec arcu.",
   },
   {
     id: 4,
     title: "Cancionario",
-    icon: <AiOutlineSchedule />,
+    icon: <GiMusicalNotes />,
     content: "Vivamus consectetur justo sed erat maximus ultrices.",
   },
-  // {
-  //   id: 5,
-  //   title: "Ultrasegmented marketing + high conversion",
-  //   icon: <AiOutlineRise />,
-  //   content: "Fusce vitae felis vitae lorem convallis hendrerit sit amet et enim.",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Automation, less work, more performance",
-  //   icon: <FiRepeat />,
-  //   content: "Donec non metus ac nunc eleifend pellentesque.",
-  // },
 ];
 
 const Resources = () => {
@@ -55,7 +39,7 @@ const Resources = () => {
     setSelectedResource(null);
   };
 
-  const colors = ["#F0A532", "#F2BB41", "#F0A532", "#F2BB41","#F0A532", "#F2BB41"];
+  const colors = ["#F0A532", "#F2BB41", "#F0A532", "#F2BB41"];
 
   return (
     <div name="Semillero" className="bg-gray-100 py-12">
